@@ -3,18 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using eProdaja.Model;
 
 namespace eProdaja.WebAPI.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
-    public class ValuesController : ControllerBase
+    [ApiController] 
+    public class ProizvodController : ControllerBase
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Proizvod>> Get()
         {
-            return new string[] { "value1", "value2" };
+			var list = new List<Proizvod>()
+			{
+				new Proizvod() {
+					ProizvodID = 1,
+					Naziv = "Laptop"
+				},
+				new Proizvod() {
+					ProizvodID = 2,
+					Naziv = "Monitor"
+				}
+			};
+            return list;
         }
 
         // GET api/values/5

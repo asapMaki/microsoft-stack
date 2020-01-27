@@ -4,14 +4,14 @@
     "/Users/km/Projects/eProdaja/eProdaja.WebAPI/eProdaja.WebAPI.csproj": {}
   },
   "projects": {
-    "/Users/km/Projects/eProdaja/eProdaja.WebAPI/eProdaja.WebAPI.csproj": {
+    "/Users/km/Projects/eProdaja/eProdaja.Model/eProdaja.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/km/Projects/eProdaja/eProdaja.WebAPI/eProdaja.WebAPI.csproj",
-        "projectName": "eProdaja.WebAPI",
-        "projectPath": "/Users/km/Projects/eProdaja/eProdaja.WebAPI/eProdaja.WebAPI.csproj",
+        "projectUniqueName": "/Users/km/Projects/eProdaja/eProdaja.Model/eProdaja.Model.csproj",
+        "projectName": "eProdaja.Model",
+        "projectPath": "/Users/km/Projects/eProdaja/eProdaja.Model/eProdaja.Model.csproj",
         "packagesPath": "/Users/km/.nuget/packages/",
-        "outputPath": "/Users/km/Projects/eProdaja/eProdaja.WebAPI/obj/",
+        "outputPath": "/Users/km/Projects/eProdaja/eProdaja.Model/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -39,11 +39,69 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
+            "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/km/Projects/eProdaja/eProdaja.WebAPI/eProdaja.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/km/Projects/eProdaja/eProdaja.WebAPI/eProdaja.WebAPI.csproj",
+        "projectName": "eProdaja.WebAPI",
+        "projectPath": "/Users/km/Projects/eProdaja/eProdaja.WebAPI/eProdaja.WebAPI.csproj",
+        "packagesPath": "/Users/km/.nuget/packages/",
+        "outputPath": "/Users/km/Projects/eProdaja/eProdaja.WebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/km/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/km/Projects/eProdaja/eProdaja.Model/eProdaja.Model.csproj": {
+                "projectPath": "/Users/km/Projects/eProdaja/eProdaja.Model/eProdaja.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
@@ -55,6 +113,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
