@@ -26,4 +26,7 @@
   <ItemGroup>
     <Folder Include="Controllers\Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="appsettings.Development.json" />
+  </ItemGroup>
 </Project>
