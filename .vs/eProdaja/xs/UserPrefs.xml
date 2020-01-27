@@ -1,10 +1,26 @@
 ﻿<Properties StartupConfiguration="{9C3E10C3-5325-43A1-AEB4-A8974143D84B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="eProdaja.WebAPI/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="eProdaja.WebAPI/Databases/eProdaja2Context.cs">
     <Files>
       <File FileName="eProdaja.WebAPI/Controllers/ProizvodController.cs" Line="27" Column="23" />
       <File FileName="eProdaja.WebAPI/Controllers/Services/IProizvodService.cs" />
       <File FileName="eProdaja.WebAPI/Startup.cs" Line="32" Column="69" />
+      <File FileName="eProdaja.WebAPI/appsettings.json" Line="8" Column="1" />
+      <File FileName="eProdaja.WebAPI/Databases/eProdaja2Context.cs" Line="28" Column="10" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="eProdaja" expanded="True">
+            <Node name="eProdaja.WebAPI" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Databases" expanded="True">
+                <Node name="eProdaja2Context.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.eProdaja.WebAPI PreferredExecutionTarget="/Applications/Google Chrome 2.app" />

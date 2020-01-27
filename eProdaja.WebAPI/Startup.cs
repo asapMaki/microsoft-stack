@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using eProdaja.WebAPI.Databases;
+using Microsoft.EntityFrameworkCore;
 
 namespace eProdaja.WebAPI
 {
@@ -28,6 +30,8 @@ namespace eProdaja.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext<eProdaja2Context>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("eProdaja2")));
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddScoped<IProizvodService, ProizvodService>();
             services.AddSwaggerGen(c =>

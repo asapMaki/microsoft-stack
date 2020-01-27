@@ -1,6 +1,7 @@
 /Users/km/Projects/eProdaja/eProdaja.Model/bin/Debug/netcoreapp2.2/eProdaja.Model.deps.json
 /Users/km/Projects/eProdaja/eProdaja.Model/bin/Debug/netcoreapp2.2/eProdaja.Model.dll
 /Users/km/Projects/eProdaja/eProdaja.Model/bin/Debug/netcoreapp2.2/eProdaja.Model.pdb
+/Users/km/Projects/eProdaja/eProdaja.Model/obj/Debug/netcoreapp2.2/eProdaja.Model.csprojAssemblyReference.cache
 /Users/km/Projects/eProdaja/eProdaja.Model/obj/Debug/netcoreapp2.2/eProdaja.Model.AssemblyInfoInputs.cache
 /Users/km/Projects/eProdaja/eProdaja.Model/obj/Debug/netcoreapp2.2/eProdaja.Model.AssemblyInfo.cs
 /Users/km/Projects/eProdaja/eProdaja.Model/obj/Debug/netcoreapp2.2/eProdaja.Model.dll
