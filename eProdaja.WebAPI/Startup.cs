@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using eProdaja.WebAPI.Controllers.Services;
+﻿using eProdaja.WebAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using eProdaja.WebAPI.Databases;
 using Microsoft.EntityFrameworkCore;
+using eProdaja.WebAPI.Controllers.Services;
+using AutoMapper;
 
 namespace eProdaja.WebAPI
 {
@@ -30,10 +25,11 @@ namespace eProdaja.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddDbContext<eProdaja2Context>(options =>
-        options.UseSqlServer(Configuration.GetConnectionString("eProdaja2")));
-            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddAutoMapper();
+            services.AddDbContext<eProdaja2Context>(options => options.UseSqlServer(Configuration.GetConnectionString("eProdaja2")));
+            
             services.AddScoped<IProizvodService, ProizvodService>();
+            services.AddScoped<IKorisniciService, KorisniciService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });

@@ -99,9 +99,13 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "target": "Package",
-              "version": "[2.2.8, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
